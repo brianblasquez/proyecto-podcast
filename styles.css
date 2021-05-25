@@ -5,54 +5,57 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.mobile-only {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
 }
 
 .primerbotonera {
-  height: 2%;
+  height: 50px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
 }
 
-.botonredondo {
-  width: 50%;
-  height: 100%;
-  position: relative;
-  padding: 10px;
-  padding-left: 100px;
-}
 
-.azul {
-  height: 36px;
-  width: 36px;
+.logo {
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   background-color: blue;
+  font-size: .8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
 .menu {
-  width: 50%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  padding-right: 100px;
 }
 
 .menu > div {
   font-size: 16px;
   font-family: "IBM Plex Mono", monospace;
+  margin-left: 50px;
+  font-weight: 500;
 }
 
 .titulo {
-  height: 9.4%;
-  width: 100%;
   padding-left: 200px;
 }
 
 .titulo p {
   font-family: "IBM Plex Mono", monospace;
+}
+
+.titulo h1 span {
+  color: blue;
 }
 
 h1 {
@@ -79,49 +82,48 @@ p {
 }
 
 .episodios {
-  height: 26.7%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   clip-path: polygon(0 16%, 100% 0%, 100% 84%, 0% 100%);
-  background-color: blue;
+  background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(3, 3, 175));
 }
 
 h3 {
-  padding-top: 186px;
-  font-size: 43px;
+  padding-top: 200px;
+  font-size: 42px;
   color: rgba(255, 255, 255, 1);
   padding-left: 200px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .podcast {
-  width: 1240px;
-  height: 536px;
-  margin-left: 100px;
-  margin-right: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+.podcast img {
+  width: 45%;
+  margin-bottom: 50px;
 }
 
 .celular {
-  width: 100%;
-  height: 12.17%;
   display: flex;
+  margin-bottom: -100px;
 }
 
 .imagencelular {
   width: 50%;
-  height: 100%;
   position: relative;
 }
 
 div .imagencelular > img {
-  height: 660px;
-  width: 457.6px;
-  position: absolute;
-  transform: translate(40%, -25%);
+  height: 600px;
+  position: relative;
+  transform: translate(75%, -25%);
 }
 
 .dedondevenimos {
@@ -147,14 +149,7 @@ div .dedondevenimos > p {
   letter-spacing: 0;
 }
 
-.fotos {
-  height: 22.8%;
-  width: 100%;
-  border: solid 1px pink;
-}
-
 .invitadas {
-  height: 162px;
   width: 100%;
   font-size: 48px;
   padding-left: 200px;
@@ -165,40 +160,27 @@ div .dedondevenimos > p {
 .blancoynegro {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 728px;
-  border: solid orange 1px;
 }
 
 .blancoynegro > img {
-  width: 33.33%;
-  height: 50%;
+  width: calc(100% / 3);
 }
 
 .temas {
-  width: 100%;
-  height: 10.9%;
+  padding: 100px 0;
 }
 
 .titulotemas {
-  height: 34.8%;
-  width: 100%;
   font-size: 48px;
   padding-left: 200px;
-  padding-top: 64px;
 }
 
 .icons {
   display: flex;
   justify-content: space-around;
-  padding-top: 69px;
-  padding-left: 276px;
-  padding-right: 276px;
-}
-
-.trabajo.repensando.bases.seguridad {
-  width: 130px;
-  height: 260px;
+  padding-top: 50px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .temas p {
@@ -216,13 +198,13 @@ div .dedondevenimos > p {
 
 .novedades {
   width: 100%;
-  height: 13.2%;
+  padding: 150px 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  clip-path: polygon(0 26%, 100% 13%, 100% 100%, 0% 100%);
-  background-color: blue;
+  clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(3, 3, 175));
 }
 
 .queres {
@@ -269,4 +251,168 @@ div .dedondevenimos > p {
 
 button {
   font-family: "IBM Plex Mono", monospace;
+}
+
+@media screen and (max-width: 420px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .primerbotonera {
+    padding: 0 20px;
+    height: 70px;
+  }
+  .titulo {
+    padding: 30px 30px 50px;
+  }
+  .titulo h1 {
+    padding-top: 50px;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .titulo button {
+    width: 100%;
+  }
+  .episodios {
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+    padding: 100px 30px 250px;
+  }
+  .episodios h3 {
+    padding: 30px 0;
+  }
+  .episodios .podcast {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .episodios .podcast img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .celular {
+    flex-direction: column;
+    padding: 0 30px;
+    margin-bottom: 0;
+  }
+  .celular > div {
+    width: 100%;
+  }
+  .celular .imagencelular img {
+    transform: translate(0, -25%);
+  }
+  .celular .dedondevenimos {
+    margin-top: -100px;
+  }
+  .celular .dedondevenimos h2 {
+    font-size: 42px;
+  }
+  .celular .dedondevenimos p {
+    padding: 30px 0;
+  }
+  .fotos .invitadas {
+    font-size: 42px;
+    padding: 30px 0 30px 30px;
+  }
+  .fotos img {
+    width: 100%;
+  }
+  .temas {
+    padding: 30px;
+  }
+  .temas .titulotemas {
+    padding:  0;
+  }
+  .temas .icons {
+    flex-direction: column;
+  }
+  .temas .icons .icon {
+    margin-bottom: 60px;
+  }
+  .novedades {
+    padding-top: 0;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .novedades .queres {
+    padding-top: 100px;
+    font-size: 42px;
+    text-align: center;
+  }
+  .piefinal {
+    flex-direction: column;
+  }
+  .piefinal .fecha {
+    width: unset;
+    margin-bottom: 20px;
+  }
+  .piefinal .ultimosiconos img{
+    margin: 0 20px;
+  }
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(3, 3, 175));
+    z-index: 5;
+    left: 100%;
+    top: 0;
+    color: white;
+    transition: .5s ease;
+    justify-content: center;
+  }
+  .menu div {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  label {
+    position: fixed;
+    z-index: 7;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  label span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: black;
+    border-radius: 5px;
+    transition: .5s ease;
+  }
+  label span:nth-child(1) {
+    top: 5px;
+    left: 0;
+    transform-origin: top left;
+  }
+  label span:nth-child(2) {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  label span:nth-child(3) {
+    bottom: 5px;
+    left: 0;
+    transform-origin: bottom left;
+  }
+  input:checked ~ label span:nth-child(1) {
+    transform: rotate(45deg);
+    width: 90%;
+    background-color: white;
+  }
+  input:checked ~ label span:nth-child(2) {
+    opacity: 0;
+  }
+  input:checked ~ label span:nth-child(3) {
+    transform: rotate(-45deg);
+    width: 90%;
+    background-color: white;
+  }
+  input:checked ~ .menu {
+    left: 0;
+  }
+
 }
