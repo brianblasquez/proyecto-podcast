@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.primerbotonera {
+  height: 2%;
+  width: 100%;
+  display: flex;
+}
+
+.botonredondo {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  padding-left: 100px;
+}
+
+.azul {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 100px;
+}
+
+.menu > div {
+  font-size: 16px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.titulo {
+  height: 9.4%;
+  width: 100%;
+  padding-left: 200px;
+}
+
+.titulo p {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+h1 {
+  padding-top: 120px;
+  font-size: 64px;
+}
+
+p {
+  font-size: 16px;
+  word-spacing: 12px;
+}
+
+.segundalinea {
+  padding-bottom: 56px;
+}
+
+.green {
+  color: rgba(6, 10, 36, 1);
+  background-color: rgba(0, 243, 187, 1);
+  border: none;
+  font-size: 18px;
+  width: 226px;
+  height: 56px;
+}
+
+.episodios {
+  height: 26.7%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(0 16%, 100% 0%, 100% 84%, 0% 100%);
+  background-color: blue;
+}
+
+h3 {
+  padding-top: 186px;
+  font-size: 43px;
+  color: rgba(255, 255, 255, 1);
+  padding-left: 200px;
+  padding-bottom: 10px;
+}
+
+.podcast {
+  width: 1240px;
+  height: 536px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.celular {
+  width: 100%;
+  height: 12.17%;
+  display: flex;
+}
+
+.imagencelular {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+div .imagencelular > img {
+  height: 660px;
+  width: 457.6px;
+  position: absolute;
+  transform: translate(40%, -25%);
+}
+
+.dedondevenimos {
+  width: 50%;
+  height: 100%;
+}
+
+.dedondevenimos p {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+h2 {
+  font-size: 48px;
+  padding-top: 20.4px;
+}
+
+div .dedondevenimos > p {
+  font-size: 16px;
+  line-height: 24px;
+  word-spacing: 0.1px;
+  padding-top: 24px;
+  padding-right: 256px;
+  letter-spacing: 0;
+}
+
+.fotos {
+  height: 22.8%;
+  width: 100%;
+  border: solid 1px pink;
+}
+
+.invitadas {
+  height: 162px;
+  width: 100%;
+  font-size: 48px;
+  padding-left: 200px;
+  padding-top: 64px;
+  padding-bottom: 36px;
+}
+
+.blancoynegro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 728px;
+  border: solid orange 1px;
+}
+
+.blancoynegro > img {
+  width: 33.33%;
+  height: 50%;
+}
+
+.temas {
+  width: 100%;
+  height: 10.9%;
+}
+
+.titulotemas {
+  height: 34.8%;
+  width: 100%;
+  font-size: 48px;
+  padding-left: 200px;
+  padding-top: 64px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 69px;
+  padding-left: 276px;
+  padding-right: 276px;
+}
+
+.trabajo.repensando.bases.seguridad {
+  width: 130px;
+  height: 260px;
+}
+
+.temas p {
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.novedades {
+  width: 100%;
+  height: 13.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 26%, 100% 13%, 100% 100%, 0% 100%);
+  background-color: blue;
+}
+
+.queres {
+  font-size: 48px;
+  color: white;
+}
+
+.botonfinal {
+  color: rgba(6, 10, 36, 1);
+  background-color: rgba(0, 243, 187, 1);
+  border: none;
+  font-size: 18px;
+  width: 345px;
+  height: 56px;
+  font-weight: 900;
+  margin-top: 36px;
+}
+
+.piefinal {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fecha {
+  height: 100%;
+  width: 50%;
+  font-size: 18px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.ultimosiconos {
+  display: flex;
+
+  align-items: center;
+}
+
+.tres img {
+  width: 20px;
+  margin-left: 40px;
+}
+
+button {
+  font-family: "IBM Plex Mono", monospace;
+}
