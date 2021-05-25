@@ -5,6 +5,10 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .mobile-only {
   display: none;
 }
